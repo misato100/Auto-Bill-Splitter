@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="billSplitter.css">
+    <title>Auto Bill Splitter</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="header">Auto Bill Splitter</div>
+        <form class="insert" id="myForm">
+            <label id="totalCost"><i class="cashTotal"></i>How much was the bill?</label>
+            <input type="number" id="total" placeholder="Add the total cost" /><br />
+            <label id="totalCost"><i class="userTotal"></i>How many people?</label>
+            <input type="number" id="people" placeholder="Add the total # of people" /><br />
+            <label id="tipG">
+                <i class="tipTotal"></i>Want to add a tip?
+
+            </label>
+            <div id="tipBtns">
+                <input type="number" id="tipPerc" placeholder="Add % tip amount" />
+                <input type="number" id="tipMan" placeholder="Add custom tip amount" />
+            </div>
+            <div class="buttonArea">
+                <button class="button" id="calcBtn">Calculate</button>
+                <button class="button" id="clearBtn">Reset</button>
+            </div>
+            <div id="personSplit">0</div>
+        </form>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="billSplitter.js"></script>
+</body>
+</html>
